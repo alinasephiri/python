@@ -1,0 +1,23 @@
+## valid input
+
+# ask user for a number that is in a given range (inclusive)
+# prompt the user so they know what to enter
+# keep asking if it is not valid
+def get_number_inrange(min_val, max_val,user):
+    
+    # repeat if the number is not in range
+    while (user < min_val) or (user > max_val):
+        if user < min_val:
+            print('The number is too small!')
+        elif user > 40:
+            print('Way to big! Think smaller.')
+        elif user > max_val:
+            print('The number is too big!')
+        else:
+            print('Invalid number')
+        user = int(input('Guess again:'))
+    # guessed the correct answer
+    print('You got it!',user,'is in the given range! The range was from',min_val,'to',max_val)
+
+    # send back the string
+    return ''
