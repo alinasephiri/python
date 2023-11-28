@@ -1,0 +1,17 @@
+## list one at a time
+##___________________________________________
+
+# get a number from the user until they enter the indicated stopping value
+# place all numbers in a list
+def get_nums_list(value,user_guess):
+    newlist = []
+    
+    # create the list
+    while user_guess != value:
+        newlist.append(user_guess)
+        # repeat until the indicated value is guessed
+        user_guess = int(input('Enter another number: '))
+    newlist.append(value)
+    
+    # send back the new list
+    return newlist
