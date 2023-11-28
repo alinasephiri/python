@@ -1,0 +1,16 @@
+## accumulate across the list
+##___________________________________________
+    
+# calculate sum of all elements in the list
+def sum(alist):
+    
+    # first position in the list
+    idx = 0
+    num_sum = 0
+    while idx < len(alist):
+        x = int(alist[idx])
+        num_sum = num_sum + x
+        idx = idx + 1
+
+    # send back the sum
+    return num_sum
