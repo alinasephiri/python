@@ -1,0 +1,19 @@
+## random lists
+
+# create a random list of numbers of given length
+# numbers must be in given range
+import random
+
+def create_random_list(length,min_value,max_value):
+    newlist = []
+    idx = 0
+    
+    # create list with the length given
+    while idx < length:
+        # Get a random integer
+        x = random.randint(min_value,max_value)
+        newlist.append(x)
+        idx = idx + 1
+        
+    # send back the new list
+    return newlist
