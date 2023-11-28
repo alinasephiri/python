@@ -1,0 +1,20 @@
+## modify each element
+##___________________________________________
+
+# assume list is a list of intergers. assume cast is a list of strings.
+
+# cast all elements in the list to an int
+def cast_list(alist):
+    newlist = []
+    
+    # first position in the list
+    idx = 0
+    while idx < len(alist):
+        #cast elements to an int
+        x = int(alist[idx])
+        newlist.append(x)
+        # next position
+        idx = idx + 1
+        
+    # send back the new list
+    return newlist
