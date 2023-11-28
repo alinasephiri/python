@@ -1,0 +1,15 @@
+## search in list
+
+# find the minimum value within the list
+def find_min(alist):
+    # initialize min to first element
+    m = alist[0]
+    idx = 1
+    #find the minimum by comparing to m
+    while idx < len(alist):
+        if alist[idx] < m:
+            m = alist[idx]
+        idx = idx + 1
+        
+    #send back the minimum
+    return m
