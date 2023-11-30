@@ -1,0 +1,13 @@
+# find the maximum value within the list
+def find_max(alist):
+    # start max with first element. initializing to 0 would be incorrect!
+    m = alist[0]
+    # since max is first element, start at 2nd
+    idx = 1
+    while idx < len(alist):
+        # if we find something bigger, save that
+        if alist[idx] > m:
+            m = alist[idx]
+        # advance the pointer
+        idx = idx + 1
+    return m
