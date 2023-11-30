@@ -1,0 +1,13 @@
+import random
+# create a random list of lower case characters of given length
+# randomly generate a number between 97 and 97+26, then cast to a chr()
+def create_random_list_lower(length):
+    # initialize list to store results
+    newlist = []
+    # track how many random characters have been generated
+    count = 0
+    while count < length:
+        # add random character to list and update counter
+        newlist.append(chr(random.randint(97,97+26)))
+        count = count + 1
+    return newlist
