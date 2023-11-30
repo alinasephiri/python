@@ -1,0 +1,13 @@
+import random
+# create a random list of upper case characters of given length
+# randomly generate a number between 65 and 65+26, then cast to a chr()
+def create_random_list_upper(length):
+    # initialize list to store results
+    newlist = []
+    # track how many random characters have been generated
+    count = 0
+    while count < length:
+        # add a random character and update counter
+        newlist.append(chr(random.randint(65,65+26)))
+        count = count + 1
+    return newlist
