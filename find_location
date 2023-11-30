@@ -1,0 +1,17 @@
+# find the location of the first occurence of the given value
+# let us assume that the value is in the list
+def find_location(alist,value):
+    # initialize flag to indicate value found. used for stopping condition
+    found = False
+    # start at beginning of list
+    idx = 0
+    # as long as not at the end of the list and the value is not in the list
+    while idx < len(alist) and not found:
+        # if we found it, we can stop looking.
+        # do not update the pointer because we want to return its current value
+        if alist[idx] == value:
+            found = True
+        else:
+            # update list pointer
+            idx = idx + 1
+    return idx
