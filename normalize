@@ -1,0 +1,13 @@
+# normalize a list (meaning divide each element by given value)
+# normalize([50,10,80],100) would return [.5,.1,.8])
+# assume value is not 0
+def normalize(alist,value):
+    # initialize list to store results.
+    newlist = []
+    # start at first element of list
+    idx = 0
+    while idx < len(alist):
+        # add normalized current element to newlist, update pointer
+        newlist.append(alist[idx]/value)
+        idx += 1
+    return newlist
