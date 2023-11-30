@@ -1,0 +1,11 @@
+# ask user for a string from a given list.
+# prompt the user so they know what to enter.
+# keep asking if it is not valid
+def get_valid_input(value_list):
+    # let user know their options and get first value
+    print('\nInput a value from the list',value_list)
+    n = input()
+    # as long as the value is invalid, get another
+    while not n in value_list:
+        n = input('again ')
+    return n
