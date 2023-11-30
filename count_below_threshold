@@ -1,0 +1,14 @@
+# count the number of values in the list that are less than given value
+# assume value is a number and list elements are numbers
+def count_below_threshold(alist,value):
+    # initialie count of found elements meeting criteria
+    count = 0
+    # start at the beginning of the list
+    idx = 0
+    while idx < len(alist):
+        # element found that meets criteria - update counter
+        if alist[idx]<value:
+            count += 1
+        # update list pointer
+        idx += 1
+    return count
