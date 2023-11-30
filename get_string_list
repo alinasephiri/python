@@ -1,0 +1,16 @@
+# get string input from the user until they enter the indicated stopping value
+# place all numbers in a list
+# assume value is a string
+def get_string_list(value):
+    # initialize list to store results
+    newlist = []
+    # let user know what their options are
+    print('\nEnter one string at a time to add to list. Stop with',value)
+    # get initial string
+    n = input()
+    # keep getting input until they enter the stop value
+    while n != value:
+        # add first because input received before entering while loop
+        newlist.append(n)
+        n = input('another ')
+    return newlist
