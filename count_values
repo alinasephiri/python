@@ -1,0 +1,15 @@
+## accumulate across the list
+##___________________________________________
+
+# count the number (i.e. frequency) of the given value in the list
+def count_values(alist,value):
+    # initialize count of value and point to first element
+    freq = 0
+    idx = 0
+    while idx < len(alist):
+        # increment the frequency when the value is found
+        if alist[idx]==value:
+            freq += 1
+        # advance the pointer
+        idx += 1
+    return freq
