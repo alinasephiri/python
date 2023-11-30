@@ -1,0 +1,16 @@
+# get a number from the user until they enter 'q'
+# place all numbers in a list
+def get_nums_q():
+    # initialize list to store results
+    newlist = []
+    # let user know their options and get first input
+    print('\nEnter one number at a time to add to list. Stop with q')
+    # notice this is not cast to int because it will not work with a 'q'
+    n = input()
+    # as long as they do not want to quit, keep getting numbers
+    while n != 'q':
+        # now we can cast the input and add to the newlist.
+        # add first because got input from user before entering while loop
+        newlist.append(int(n))
+        n = input('another ')
+    return newlist
