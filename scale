@@ -1,0 +1,12 @@
+# scale a list (meaning multiply each element by given value)
+# scale([.5,.1,.8],100) would return [50,10,80]
+def scale(alist,value):
+    # initialize list to store results
+    newlist = []
+    # start at first element in the list
+    idx = 0
+    while idx < len(alist):
+        # add scaled element to newlist and update pointer
+        newlist.append(alist[idx]*value)
+        idx += 1
+    return newlist
