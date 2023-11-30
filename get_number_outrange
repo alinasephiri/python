@@ -1,0 +1,12 @@
+# ask user for a number that is NOT in a given range.
+# prompt the user so they know what to enter
+# keep asking if it is not valid
+# assume min_val < max_val
+def get_number_outrange(min_val, max_val):
+    # Let user know about options and get first number
+    print('\nInput a number NOT between',min_val,'and',max_val,'inclusive')
+    n = int(input())
+    # As long as the user enters invalid input, keep asking
+    while min_val <= n <= max_val:
+        n = int(input('again '))
+    return n
